@@ -1,0 +1,49 @@
+void main(List<String> args) {
+  // 1. Soru
+  List<int> numbers = [5, 10, 15, 20, 25];
+
+  for(int i = 0; i < numbers.length; i++)
+  {
+    if(numbers[i] %2 == 0)
+    {
+      print("Cift olan sayilar : ${numbers[i]}");
+    }
+    else
+    {
+      print("Tek olan sayilar : ${numbers[i]}");
+    }
+  }
+
+  // 2. Soru
+  
+  *Map<String, int> notlar = {'Ali': 4, 'Veli': 6, 'Ahmet': 8};
+  int toplam = 0;
+
+  for(int not in notlar.values)
+  {
+    toplam += not;
+  }
+
+  if(toplam > 10)
+  {
+    print("Buyuk");
+  }
+  else
+  {
+    print("Kucuk");
+  }
+
+  // 3. Soru
+
+  Set<int> sayilar = {1,5,9,10,14};
+
+  if(sayilar.contains(10))
+  {
+    print("10 sayisi var");
+  }
+  else
+  {
+    print("10 sayisi yok");
+  }
+
+}
